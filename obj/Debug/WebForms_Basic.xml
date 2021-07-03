@@ -109,6 +109,69 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:UdupiElectricityBoard.AdminAssignDetails._MobileNo">
+<summary>
+MobileNo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UdupiElectricityBoard.AdminAssignDetails._CustNo">
+<summary>
+CustNo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UdupiElectricityBoard.AdminAssignDetails._RRno">
+<summary>
+RRno control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UdupiElectricityBoard.AdminAssignDetails._LocCode">
+<summary>
+LocCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UdupiElectricityBoard.AdminAssignDetails._MtrCode">
+<summary>
+MtrCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UdupiElectricityBoard.AdminAssignDetails._SubDivi">
+<summary>
+SubDivi control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UdupiElectricityBoard.AdminAssignDetails._Submit">
+<summary>
+Submit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:UdupiElectricityBoard.AdminComplaints._ListView1">
 <summary>
 ListView1 control.
@@ -130,6 +193,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:UdupiElectricityBoard.AdminComplaints._Cust_Name">
 <summary>
 Cust_Name control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UdupiElectricityBoard.AdminComplaints._C_Date">
+<summary>
+C_Date control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -217,15 +289,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:UdupiElectricityBoard.AdminFeedback._Name">
-<summary>
-Name control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:UdupiElectricityBoard.AdminFeedback._Feedback">
 <summary>
 Feedback control.
@@ -247,24 +310,6 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:UdupiElectricityBoard.AdminLogin._Password">
 <summary>
 Password control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:UdupiElectricityBoard.AdminLogin._Check">
-<summary>
-Check control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:UdupiElectricityBoard.AdminLogin._Forgot">
-<summary>
-Forgot control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -508,69 +553,6 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:UdupiElectricityBoard.AdminReg._Cpassword">
 <summary>
 Cpassword control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:UdupiElectricityBoard.AssignConn._MobileNo">
-<summary>
-MobileNo control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:UdupiElectricityBoard.AssignConn._CustNo">
-<summary>
-CustNo control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:UdupiElectricityBoard.AssignConn._RRno">
-<summary>
-RRno control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:UdupiElectricityBoard.AssignConn._LocCode">
-<summary>
-LocCode control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:UdupiElectricityBoard.AssignConn._MtrCode">
-<summary>
-MtrCode control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:UdupiElectricityBoard.AssignConn._SubDivi">
-<summary>
-SubDivi control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:UdupiElectricityBoard.AssignConn._Submit">
-<summary>
-Submit control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -1081,6 +1063,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:UdupiElectricityBoard.ForgotPass._mail">
+<summary>
+mail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:UdupiElectricityBoard.GenerateBill._form1">
 <summary>
 form1 control.
@@ -1300,6 +1291,24 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:UdupiElectricityBoard.Status._SqlDataSource2">
 <summary>
 SqlDataSource2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UdupiElectricityBoard._Try._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UdupiElectricityBoard._Try._CustNo">
+<summary>
+CustNo control.
 </summary>
 <remarks>
 Auto-generated field.

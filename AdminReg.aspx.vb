@@ -10,6 +10,7 @@
         cc.cmd.CommandText = "INSERT INTO tblAdmin VALUES ('" + Name.Value + "', " + Phone.Value + ", '" + Email.Value + "', '" + Address.Value + "', '" + Username.Value + "', '" + Password.Value + "', " + Aadhar.Value + ")"
         cc.cmd.Connection = cc.cnn
         cc.cmd.ExecuteNonQuery()
+        cc.cnn.Close()
         If (MsgBox("Record Inserted Successfully")) Then
             Response.Redirect("AdminHome.aspx")
         End If

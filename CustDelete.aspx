@@ -55,6 +55,6 @@ margin-left: 20px;
         <SortedDescendingCellStyle BackColor="#FFFDF8" />
         <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:UEBConnectionString9 %>" SelectCommand="SELECT [Name], [Address], [Email], [Mobile_No], [Aadhar_No], [RR_No], [Customer_No], [Sub_Division], [Location_Code], [Meter_Code], [Username] FROM [tblSignUp]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:UEBConnectionString9 %>" SelectCommand="SELECT [Email], [Mobile_No], [Aadhar_No], [RR_No], [Customer_No], [Sub_Division], [Location_Code], [Meter_Code], [Username], [Name], [Address] FROM [tblSignUp]"></asp:SqlDataSource>
     </form>
 </asp:Content>

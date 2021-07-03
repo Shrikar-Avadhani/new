@@ -10,4 +10,7 @@
         Response.Redirect("Status.aspx")
     End Sub
 
+    Protected Sub ListView2_SelectedIndexChanged(sender As Object, e As EventArgs)
+
+    End Sub
 End Class

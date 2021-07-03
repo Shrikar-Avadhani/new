@@ -14,6 +14,7 @@
         cc.cmd.CommandText = "INSERT INTO tblNewConnection VALUES ('" + Name.Value + "', '" + Address.Value + "','" + Email.Value + "', " + Phone.Value + "," + Aadhar.Value + ", '" + n + "' )"
         cc.cmd.Connection = cc.cnn
         cc.cmd.ExecuteNonQuery()
+        cc.cnn.Close()
 
         If (MsgBox("You have registred successfully")) Then
             Response.Redirect("Home.aspx")

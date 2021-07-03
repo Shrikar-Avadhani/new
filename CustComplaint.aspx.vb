@@ -12,7 +12,7 @@
         cc.cmd.CommandText = "INSERT INTO tblComplaint (Complaint, Complaint_Date, Cust_Name) VALUES ('" + Complaint.Value + "', '" + d + "', '" + Session("CustName") + "')"
         cc.cmd.Connection = cc.cnn
         cc.cmd.ExecuteNonQuery()
-
+        cc.cnn.Close()
 
         If (MsgBox("Your complaint has been registered")) Then
             Response.Redirect("CustomerHome.aspx")

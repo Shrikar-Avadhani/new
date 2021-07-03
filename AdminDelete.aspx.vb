@@ -14,6 +14,7 @@
         cc.cmd.CommandText = "DELETE FROM tblAdmin WHERE (Username = '" + Username.Value + "')"
         cc.cmd.Connection = cc.cnn
         cc.cmd.ExecuteNonQuery()
+        cc.cnn.Close()
 
         MsgBox("Record deleted Successfully")
         Response.Redirect("AdminDelete.aspx")

@@ -11,6 +11,7 @@
         cc.cmd.CommandText = "INSERT INTO tblAssets VALUES ('" + Assets.Value + "', " + Total.Value + ", " + In_Use.Value + ", " + Active.Value + ", " + InActive.Value + ", '" + Username.Value + "')"
         cc.cmd.Connection = cc.cnn
         cc.cmd.ExecuteNonQuery()
+        cc.cnn.Close()
         Response.Redirect("AdminAssets.aspx")
     End Sub
 

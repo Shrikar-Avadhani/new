@@ -8,6 +8,9 @@
             width: 800px;
             padding: 20px;
             margin: 30px auto;
+            border-radius: 8px;
+       /*     background-color:black;
+            color:white;*/
         }
 
         .btn {
@@ -46,7 +49,7 @@
         <AlternatingItemTemplate>
             <span style="background-color: #FFFFFF; color: #284775; display: block;
 margin:20px auto;
-width: 700px;">
+width: 700px; border-radius: 8px; padding: 20px;">
             <span class="labell">Date:</span> 
             <asp:Label ID="DateLabel" runat="server" Text='<%# Eval("Date") %>' />
             <br />
@@ -90,7 +93,7 @@ width: 700px;">
         <ItemTemplate>
             <span style="background-color: #E0FFFF; color: #333333; display: block;
 margin:20px auto;
-width: 700px;">
+width: 700px; border-radius: 8px; padding: 20px;">
                 <span class="labell">Date:</span> 
             <asp:Label ID="DateLabel" runat="server" Text='<%# Eval("Date") %>' />
             <br />

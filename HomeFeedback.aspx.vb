@@ -12,7 +12,7 @@
         cc.cmd.CommandText = "INSERT INTO tblFeedback VALUES ('" + Name.Value + "', '" + Feedback.Value + "', '" + d + "')"
         cc.cmd.Connection = cc.cnn
         cc.cmd.ExecuteNonQuery()
-
+        cc.cnn.Close()
 
         If (MsgBox("Your feedback has been recorded")) Then
             Response.Redirect("Home.aspx")

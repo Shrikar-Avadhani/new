@@ -12,6 +12,7 @@
         cc.cmd.CommandText = "INSERT INTO tblNews VALUES ('" + NTitle.Value + "', '" + News.Value + "', '" + Session("AdminName") + "', '" + d + "')"
         cc.cmd.Connection = cc.cnn
         cc.cmd.ExecuteNonQuery()
+        cc.cnn.Close()
 
         If (MsgBox("The news feed has been updated")) Then
             Response.Redirect("AdminHome.aspx")

@@ -20,11 +20,11 @@
             End If
             Select Case MsgBox("You have connections to assign, would you like to assign them now??", MsgBoxStyle.YesNo, "Assign Connection")
                 Case MsgBoxResult.Yes
-                    Response.Redirect("AssignConn.aspx")
+                    Response.Redirect("AdminAssignDetails.aspx")
             End Select
-
-
         End If
+        cc.dr.Close()
+        cc.cnn.Close()
     End Sub
 
 End Class

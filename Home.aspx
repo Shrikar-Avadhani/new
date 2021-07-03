@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         marquee{
-            font-size:2rem;
+            font-size:3rem;
         }
     </style>
 </asp:Content>
@@ -145,11 +145,11 @@
     <!--  //News section -->
 
     <!-- customers Section -->
-    <marquee runat="server" id="News" width="100%" scrollamount="15" fontsize="40px" height ="60px" bgcolor ="red"></marquee>
-    <%--<section id="about" class="w3l-customers py-md-5 py-4">
-        <div class="container">
-        </div>
-    </section>--%>
+    <section id="about" style="height=50px">
+        <marquee runat="server" id="News" width="100%" scrollamount="15" height ="90px" bgcolor ="#f3525a"></marquee>
+    </section>
+    
+    
     <div class="row top-cont-grid align-items-center">
         <div class="col-lg-6 left-img pr-lg-4">
             <img src="assets/images/about1.jpg" alt="" class="img-responsive radius-image img-fluid">

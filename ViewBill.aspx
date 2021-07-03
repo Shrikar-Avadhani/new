@@ -24,27 +24,40 @@
             }
         }
 
-        button{
+        .pay{
+            text-align:center;
+            font-weight:600;
+        }
+
+        button, .pay{
             display:block;
             width:150px;
             border-radius:5px;
             color:white;
-            background-color:red;
+            background-color:#f3525a;
             cursor:pointer;
             margin: 15px auto;
+            border:none;
+            font-weight:600;
         }
         button:hover{
-            background-color:orangered;
+            color:red;
+        }
+        
+        .empty{
+            font-size:2rem;
+            height:100px;
+            margin:auto 18px;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form id="form1" runat="server" style="background-color:white !important; width:500px; margin:auto;" class="Print-Area" >
-        <div class="header">
+         <div class="header">
             <span style="font-size: 30px;color: hsl(357, 87%, 63.7%);" class="fa fa-clone"></span><h1 style="display:inline-block; color: black;">&nbsp;UEB</h1>
         </div>
         <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1">
-              
+             
             <AlternatingItemTemplate>
                 <span style="background-color: #FFFFFF;color: #284775;">
                 Name:
@@ -128,7 +141,8 @@
                 <br /><br /></span>
             </EditItemTemplate>
             <EmptyDataTemplate>
-                <span>No data was returned.</span>
+                <span class="empty">Your bill is not yet generated.</span>
+
             </EmptyDataTemplate>
             <InsertItemTemplate>
                 <span style="">Name:
@@ -253,5 +267,8 @@
         </asp:SqlDataSource>
     
     </form>
-    <button onclick="window.print()">Print</button>
+    <button onclick="window.print()" id="btn">Print</button>
+    <a class="pay" href="Payment.aspx">Pay</a>
+    <script>
+    </script>
 </asp:Content>

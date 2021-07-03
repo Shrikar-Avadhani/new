@@ -11,9 +11,11 @@
                 News.InnerText = News.InnerText + " " + cc.dr.Item(0) + " : " + cc.dr.Item(1) + ";"
 
             End While
-
+            cc.dr.Close()
+            cc.cnn.Close()
         End If
-
+        cc.dr.Close()
+        cc.cnn.Close()
     End Sub
 
 End Class

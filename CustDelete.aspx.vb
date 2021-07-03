@@ -14,7 +14,7 @@
         cc.cmd.CommandText = "DELETE FROM tblSignUp WHERE (Username = '" + Username.Value + "')"
         cc.cmd.Connection = cc.cnn
         cc.cmd.ExecuteNonQuery()
-
+        cc.cnn.Close()
         MsgBox("Record deleted Successfully")
         Response.Redirect("CustDelete.aspx")
     End Sub

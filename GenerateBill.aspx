@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/AdminMaster.Master" CodeBehind="GenerateBill.aspx.vb" Inherits="UdupiElectricityBoard.GenerateBill" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+      <%--  <meta http-equiv="refresh" content="3">--%>
     <style>
 
 .CustNo{
@@ -14,10 +16,13 @@ border-radius: 8px;
 width: 140px;
 margin: auto;
 margin-left: 20px;
+background-color: #f3525a;
+color:white;
+font-weight:600;
         }
 
 .Submit:hover{
-    background-color:rgb(173, 12, 20);
+    background-color: #f12e38;
 }
 h1{
     text-align:center;
@@ -37,7 +42,7 @@ h1{
         <AlternatingRowStyle BackColor="White" />
         <Columns>
             <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
-            <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+            <asp:BoundField DataField="Address" HeaderText="Address" SortExpression="Address" />
             <asp:BoundField DataField="Customer_No" HeaderText="Customer_No" SortExpression="Customer_No" />
             <asp:BoundField DataField="RR_No" HeaderText="RR_No" SortExpression="RR_No" />
         </Columns>
@@ -52,7 +57,7 @@ h1{
         <SortedDescendingCellStyle BackColor="#E9EBEF" />
         <SortedDescendingHeaderStyle BackColor="#4870BE" />
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:UEBConnectionString14 %>" SelectCommand="SELECT [Name], [Email], [Customer_No], [RR_No] FROM [tblSignUp] WHERE ([Bill] = 'No')">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:UEBConnectionString14 %>" SelectCommand="SELECT [Name], [Address], [Customer_No], [RR_No] FROM [tblSignUp] WHERE ([Bill] = 'No')">
             <SelectParameters>
                 <asp:Parameter DefaultValue="Yes" Name="Bill" Type="String" />
             </SelectParameters>

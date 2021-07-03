@@ -22,7 +22,7 @@
 	<!-- Stylesheets -->
 	<link href="assets/css/CustLogin1.css" rel='stylesheet' type='text/css' />
 	<!-- online fonts-->
-	    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
 	<link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i" rel="stylesheet"/>
 	<style>
 		.fa{
@@ -32,6 +32,11 @@
 			color:white;
 			border-radius:50px;
 			padding:12px;
+		}
+
+		.link{
+			text-decoration:none;
+			margin-right:10px;
 		}
 	</style>
 </head>
@@ -55,9 +60,10 @@
 				<div class="agile-field-txt">
 					<input runat="server" type="password" name="password" placeholder="******" required="" id="Password" />
 					<div class="agile_label">
-						<input id="check3" name="check3" type="checkbox" value="show password"/>
-						<label class="check" for="check3">Forgot Password</label>
-						<a href ="CustSignup.aspx" >Signup</a> 
+						<%--<input id="check3" name="check3" type="checkbox" value="show password"/>
+						<label class="check" for="check3">Forgot Password</label>--%>
+						<a class="link" href="ForgotPass.aspx">Forgot Password</a>
+						<a class="link" href ="CustSignup.aspx" >Signup??</a> 
 					</div>
 				</div>
 				<div class="w3ls-bot">

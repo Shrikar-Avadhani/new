@@ -235,7 +235,8 @@
   <script src="assets/js/jquery-1.9.1.min.js"></script>
   <!-- faq -->
   <script>
-    const items = document.querySelectorAll(".accordion button");
+      const items = document.querySelectorAll(".accordion button");
+     
 
     function toggleAccordion() {
       const itemToggle = this.getAttribute('aria-expanded');

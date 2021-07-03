@@ -32,24 +32,6 @@ Partial Public Class AdminLogin
     Protected WithEvents Password As Global.System.Web.UI.HtmlControls.HtmlInputPassword
 
     '''<summary>
-    '''Check control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Check As Global.System.Web.UI.HtmlControls.HtmlInputCheckBox
-
-    '''<summary>
-    '''Forgot control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Forgot As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-
-    '''<summary>
     '''Loginn control.
     '''</summary>
     '''<remarks>

@@ -41,7 +41,7 @@
     <form id="form1" runat="server">
         <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1">
             <AlternatingItemTemplate>
-                <span style="background-color: #FFFFFF;color: #284775; margin:20px auto; width:700px; display:block;">
+                <span style="background-color: #FFFFFF;color: #284775; margin:20px auto; width:700px; display:block; border-radius:15px;">
                     <span class="labell">Date:</span> 
                 <asp:Label ID="DateLabel" runat="server" Text='<%# Eval("Date") %>' />
                 <br />
@@ -83,7 +83,7 @@
                 <br /><br /></span>
             </InsertItemTemplate>
             <ItemTemplate>
-                <span style="background-color: #E0FFFF;color: #333333; margin:20px auto; width:700px; display:block;">
+                <span style="background-color: #E0FFFF;color: #333333; margin:20px auto; width:700px; display:block; border-radius:15px;">
                     <span class="labell">Date:</span> :
                 <asp:Label ID="DateLabel" runat="server" Text='<%# Eval("Date") %>' />
                 <br />
@@ -116,7 +116,7 @@
             </SelectedItemTemplate>
         </asp:ListView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:UEBConnectionString5 %>" SelectCommand="SELECT [Date], [Name], [Feedback] FROM [tblFeedback]"></asp:SqlDataSource>
-        <input type="text" id="Name" class="Name" runat="server" placeholder="Your Name" />
+
         <textarea style="resize:none;" runat="server" placeholder="Feedback" class="Feedback" id="Feedback" rows="5" cols="100" required=""></textarea>
         <input runat="server" type="submit" value="Submit" class="btn btn-primary btn-style" onserverclick="Submit" />
     </form>

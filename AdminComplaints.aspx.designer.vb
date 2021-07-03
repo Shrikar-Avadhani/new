@@ -41,6 +41,15 @@ Partial Public Class AdminComplaints
     Protected WithEvents Cust_Name As Global.System.Web.UI.HtmlControls.HtmlInputText
 
     '''<summary>
+    '''C_Date control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents C_Date As Global.System.Web.UI.HtmlControls.HtmlInputText
+
+    '''<summary>
     '''Complaint_Reply control.
     '''</summary>
     '''<remarks>

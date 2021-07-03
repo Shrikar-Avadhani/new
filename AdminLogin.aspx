@@ -22,7 +22,7 @@
 	<!-- Stylesheets -->
 	<link href="assets/css/AdminLogin1.css" rel='stylesheet' type='text/css' />
 	<!-- online fonts-->
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
 	<link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i" rel="stylesheet"/>
 	<style>
 		.fa{
@@ -51,8 +51,9 @@
 				<div class="agile-field-txt">
 					<input runat="server" id="Password" type="password" name="Password" placeholder="******" required="" />
 					<div class="agile_label">
-						<input id="Check" runat="server" name="Check" type="checkbox" value="show password"/>
-						<label  runat="server" id="Forgot" class="check" for="check3">Forgot Password</label>
+						<%--<input id="Check" runat="server" name="Check" type="checkbox" value="show password"/>
+						<label  runat="server" id="Forgot" class="check" for="check3">Forgot Password</label>--%>
+						<a href="ForgotPass.aspx" style="color:white;">Forgot Password</a>
 					</div>
 				</div>
 				<div class="w3ls-bot">

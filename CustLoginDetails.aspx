@@ -20,6 +20,6 @@
         <SortedDescendingCellStyle BackColor="#E9EBEF" />
         <SortedDescendingHeaderStyle BackColor="#4870BE" />
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:UEBConnectionString11 %>" SelectCommand="SELECT * FROM [tblCustLogin] ORDER BY [Date]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:UEBConnectionString11 %>" SelectCommand="SELECT * FROM [tblCustLogin] ORDER BY [Date] DESC"></asp:SqlDataSource>
     </form>
 </asp:Content>

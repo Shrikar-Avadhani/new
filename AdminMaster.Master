@@ -109,7 +109,7 @@
                                     <li><a href="AdminComplaints.aspx">Complaints</a></li>
                                     <li><a href="AdminFeedback.aspx">Feedbacks</a></li>
                                     <li><a href="GenerateBill.aspx">Bill</a></li>
-                                    <li><a href="AssignConn.aspx">Assign-Conn.</a></li>
+                                    <li><a href="AdminAssignDetails.aspx">Assign-Conn.</a></li>
                                     <li><a href="#">Login Details <i class="fa fa-caret-right"></i></a>
                                         <ul>
                                             <li><a href="AdminLoginDetails.aspx">Admins</a></li>
@@ -123,7 +123,7 @@
                                 <ul>
                                     <li><a href="AdminDelete.aspx">Admin</a></li>
                                     <li><a href="CustDelete.aspx">Customer</a></li>
-                                    <li><a href="Deleted.aspx">Deleted <i class="fa fa-caret-right"></i></a>
+                                    <li><a href="#">Deleted <i class="fa fa-caret-right"></i></a>
                                         <ul>
                                             <li><a href="DeletedAdmin.aspx">Admin</a></li>
                                             <li><a href="DeletedCust.aspx">Customer</a></li>

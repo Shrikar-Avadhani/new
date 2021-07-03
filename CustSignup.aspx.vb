@@ -12,6 +12,8 @@
         cc.cmd.CommandText = "INSERT INTO tblSignUp VALUES ('" + Name.Value + "', '" + Address.Value + "', '" + Email.Value + "', " + Phone.Value + ", '" + RR.Value + "', " + Cno.Value + ", '" + SubDiv.Value + "', " + Lcode.Value + ", '" + Mcode.Value + "', '" + Uname.Value + "', '" + Password.Value + "', '" + Question.Value + "', '" + Answer.Value + "', " + Aadhar.Value + ", '" + b + "')"
         cc.cmd.Connection = cc.cnn
         cc.cmd.ExecuteNonQuery()
+        cc.cnn.Close()
+
         If (MsgBox("You have signed up successfully")) Then
             Response.Redirect("CustomerLogin.aspx")
         End If

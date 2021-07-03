@@ -18,12 +18,21 @@
         }
 
         .CustName{
-            margin:auto;
-            margin-top: 20px;
+            
+            margin: 20px;
             width: 210px;
             display:block;
             border-radius: 5px;
             padding: 9px;
+            display:inline-block;
+        }
+        .input-group{
+            margin:auto;
+            width:500px;
+        }
+        .title-big{
+            text-decoration:underline;
+            margin:20px auto;
         }
     </style>
 </asp:Content>
@@ -35,8 +44,8 @@
         <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1">
             <AlternatingItemTemplate>
                 <span style="background-color: #FFFFFF;color: #284775; display: block;
-margin: auto;
-width: 1000px;">Complaint_Date:
+margin:20px  auto;
+width: 1000px; padding:20px; border-radius:15px;">Complaint_Date:
                 <asp:Label ID="Complaint_DateLabel" runat="server" Text='<%# Eval("Complaint_Date") %>' />
                 <br />
                 Cust_Name:
@@ -53,8 +62,6 @@ width: 1000px;">Complaint_Date:
                 Reply_Date:
                 <asp:Label ID="Reply_DateLabel" runat="server" Text='<%# Eval("Reply_Date") %>' />
                 <br />
-                <br />
-                    <hr />
                 </span>
             </AlternatingItemTemplate>
             <EditItemTemplate>
@@ -106,8 +113,8 @@ width: 1000px;">Complaint_Date:
             </InsertItemTemplate>
             <ItemTemplate>
                 <span style="background-color: #E0FFFF;color: #333333; display: block;
-margin: auto;
-width: 1000px;">Complaint_Date:
+margin:20px auto;
+width: 1000px; padding:20px; border-radius:15px;">Complaint_Date:
                 <asp:Label ID="Complaint_DateLabel" runat="server" Text='<%# Eval("Complaint_Date") %>' />
                 <br />
                 Cust_Name:
@@ -124,8 +131,6 @@ width: 1000px;">Complaint_Date:
                 Reply_Date:
                 <asp:Label ID="Reply_DateLabel" runat="server" Text='<%# Eval("Reply_Date") %>' />
                 <br />
-                <br />
-                <hr />
                 </span>
             </ItemTemplate>
             <LayoutTemplate>
@@ -158,7 +163,10 @@ width: 1000px;">Complaint_Date:
             </SelectedItemTemplate>
         </asp:ListView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:UEBConnectionString3 %>" SelectCommand="SELECT [Complaint_Date], [Cust_Name], [Complaint], [Admin_Name], [Reply], [Reply_Date] FROM [tblComplaint]"></asp:SqlDataSource>
+        <div class="input-group">
         <input class="CustName" placeholder="Customer Name" runat="server" type="text" id="Cust_Name" />
+        <input class="CustName" placeholder="Complaint Date" runat="server" type="text" id="C_Date" />
+            </div>
         <textarea style="resize:none;" runat="server" placeholder="Complaint Reply" class="Complaint" id="Complaint_Reply" rows="5" cols="100" required=""></textarea>
         <input runat="server" type="submit" value="Submit"  class="btn btn-primary btn-style" onserverclick="Submit"/>
     </form>

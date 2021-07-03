@@ -15,7 +15,7 @@
         cc.dr = cc.cmd.ExecuteReader()
 
         If cc.dr.HasRows Then
-            cc.cmd.CommandText = "SELECT Password FROM tblAdmin WHERE Password='" + Password.Value + "' COLLATE Latin1_General_CS_AS"
+            cc.cmd.CommandText = "SELECT Password FROM tblAdmin WHERE Password='" + Password.Value + "' AND Username = '" + Username.Value + "' COLLATE Latin1_General_CS_AS"
             cc.dr.Close()
             cc.cmd.Connection = cc.cnn
             cc.dr = cc.cmd.ExecuteReader()
@@ -25,6 +25,7 @@
                 cc.dr.Close()
                 cc.cmd.Connection = cc.cnn
                 cc.cmd.ExecuteNonQuery()
+                cc.cnn.Close()
                 Response.Redirect("AdminHome.aspx")
             Else
                 MsgBox("Incorrect Password")

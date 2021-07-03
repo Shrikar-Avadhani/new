@@ -48,7 +48,7 @@
 
     <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1">
         <AlternatingItemTemplate>
-            <span style="background-color: #FFFFFF;color: #284775; margin:20px auto; width:700px; display:block;">
+            <span style="background-color: #FFFFFF;color: #284775; margin:20px auto; width:700px; display:block; padding:20px; border-radius:15px;">
                <span class="labell">Date:</span> 
             <asp:Label ID="DateLabel" runat="server" Text='<%# Eval("Date") %>' />
             <br />
@@ -90,7 +90,7 @@
             <br /><br /></span>
         </InsertItemTemplate>
         <ItemTemplate>
-            <span style="background-color: #E0FFFF;color: #333333; margin:20px auto; width:700px; display:block;">
+            <span style="background-color: #E0FFFF;color: #333333; margin:20px auto; width:700px; display:block; padding:20px; border-radius:15px;">
             <span class="labell">Date:</span>    
             <asp:Label CssClass="labell" ID="DateLabel" runat="server" Text='<%# Eval("Date") %>' />
             <br />

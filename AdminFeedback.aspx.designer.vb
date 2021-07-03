@@ -41,15 +41,6 @@ Partial Public Class AdminFeedback
     Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
-    '''Name control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Name As Global.System.Web.UI.HtmlControls.HtmlInputText
-
-    '''<summary>
     '''Feedback control.
     '''</summary>
     '''<remarks>
